@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR88 - Bật vận may rinh tiền tỷ</title>
+    <!-- Liên kết thư viện icon FontAwesome Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Top Bar -->
+    <header class="header">
+        <div class="top-bar">
+    <div class="logo">
+        <!-- Thay thế text bằng hình ảnh logo -->
+        <img src="images/logo.webp" alt="TR88 Logo">
+    </div>
+    <div class="header-actions">
+        <button class="btn btn-login">ĐĂNG NHẬP</button>
+        <button class="btn btn-register">ĐĂNG KÝ</button>
+        
+        <div class="lang-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+</div>
+
+       <!-- Desktop Navigation (Ẩn trên Mobile) -->
+<nav class="desktop-nav">
+    <ul class="nav-list">
+        <li class="active">
+            <i class="fas fa-home"></i> 
+            <span>TRANG CHỦ</span>
+        </li>
+        <li>
+            <i class="fas fa-gem"></i> <!-- Hoặc fa-gem nếu không có font pro -->
+            <span>NỔ HŨ</span>
+            <span class="badge badge-hot">HOT</span>
+        </li>
+        <li>
+            <i class="fas fa-fish"></i> 
+            <span>BẮN CÁ</span>
+        </li>
+        <li>
+            <i class="fas fa-bullseye"></i> 
+            <span>CASINO</span>
+            <span class="badge badge-hot">HOT</span>
+        </li>
+        <li>
+            <i class="fas fa-futbol"></i> 
+            <span>THỂ THAO</span>
+        </li>
+        <li>
+            <i class="fas fa-clone"></i> <!-- Hoặc fa-layer-group -->
+            <span>GAME BÀI</span>
+        </li>
+        <li>
+            <i class="fas fa-kiwi-bird"></i> 
+            <span>ĐÁ GÀ</span>
+        </li>
+        <li>
+            <i class="fas fa-dharmachakra"></i> 
+            <span>XỔ SỐ</span>
+        </li>
+        <li>
+            <i class="fas fa-gamepad"></i> 
+            <span>E-SPORTS</span>
+        </li>
+        <li>
+            <i class="fas fa-user-friends"></i> 
+            <span>GIỚI THIỆU</span>
+        </li>
+        <li>
+            <i class="fas fa-play-circle"></i> 
+            <span>TẢI APP</span>
+        </li>
+        <li>
+            <i class="fas fa-user-tie"></i> 
+            <span>ĐẠI LÝ</span>
+            <span class="badge badge-percent">80%</span>
+        </li>
+        <li>
+            <i class="fas fa-crown"></i> 
+            <span>VIP</span>
+        </li>
+        <li>
+            <i class="fas fa-gift"></i> 
+            <span>KHUYẾN MÃI</span>
+            <span class="badge badge-hot">HOT</span>
+        </li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- Banner chính (Slider tự động) -->
+    <section class="hero-banner">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <!-- Thay thế src bằng tên file thực tế của 6 hình ảnh của bạn -->
+                <img src="images/banner1.avif" alt="Banner 1" class="slide">
+                <img src="images/banner2.avif" alt="Banner 2" class="slide">
+                <img src="images/banner3.avif" alt="Banner 3" class="slide">
+                <img src="images/banner4.avif" alt="Banner 4" class="slide">
+                <img src="images/banner5.avif" alt="Banner 5" class="slide">
+              
+            </div>
+            <!-- Dấu chấm điều hướng (Dots) -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Thanh Thông Báo (Marquee) -->
+    <div class="notice-bar">
+        <i class="fas fa-volume-up"></i>
+        <marquee behavior="scroll" direction="left">Chào mừng đến với TR88. Nếu bị chậm trễ, vui lòng liên hệ ngay CSKH để được kiểm tra và hỗ trợ. Xin cảm ơn!</marquee>
+    </div>
+
+    <!-- Mobile Quick Links (Chỉ hiển thị trên Mobile) -->
+    <div class="mobile-quick-links">
+        <div class="quick-item">
+            <div class="icon-diamond"><i class="fab fa-telegram"></i></div>
+            <span>TELEGRAM</span>
+        </div>
+        <div class="quick-item">
+            <div class="icon-diamond"><i class="fas fa-cloud-download-alt"></i></div>
+            <span>TẢI APP</span>
+        </div>
+        <div class="quick-item">
+            <div class="icon-diamond"><i class="fas fa-gem"></i></div>
+            <span>VIP CLUB</span>
+        </div>
+        <div class="quick-item">
+            <div class="icon-diamond"><i class="fas fa-wallet"></i></div>
+            <span>NẠP TIỀN</span>
+        </div>
+        <div class="quick-item">
+            <div class="icon-diamond"><i class="fas fa-money-bill-wave"></i></div>
+            <span>RÚT TIỀN</span>
+        </div>
+        <div class="quick-item">
+            <div class="icon-diamond"><i class="fas fa-headset"></i></div>
+            <span>CSKH 24/7</span>
+        </div>
+    </div>
+
+    <!-- Danh mục Game / Tabs (Cập nhật giao diện Mobile) -->
+    <div class="category-tabs-wrapper">
+        <!-- Mũi tên trái -->
+        <i class="fas fa-caret-left nav-arrow left-arrow"></i>
+        
+        <div class="category-tabs">
+            <div class="tab-item active">
+                <!-- Thay icon bằng thẻ img -->
+                <div class="tab-icon"><img src="images/icon1.png" alt="Hot nhất"></div>
+                <span>Hot nhất</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/iconpc2.png" alt="Nổ Hũ"></div>
+                <span>Nổ Hũ</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/iconpc3.png" alt="Bắn Cá"></div>
+                <span>Bắn Cá</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/icon4.png" alt="Sòng Bài"></div>
+                <span>Sòng Bài</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/iconpc5.png" alt="Game Bài"></div>
+                <span>Game Bài</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/icon6.png" alt="Thể Thao"></div>
+                <span>Thể Thao</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/icon7.png" alt="Xổ Số"></div>
+                <span>Xổ Số</span>
+            </div>
+            <div class="tab-item">
+                <div class="tab-icon"><img src="images/icon8.png" alt="Xổ Số"></div>
+                <span>Xổ Số</span>
+            </div>
+        </div>
+
+        <!-- Mũi tên phải -->
+        <i class="fas fa-caret-right nav-arrow right-arrow"></i>
+    </div>
+
+    <!-- Khu vực Nổ Hũ Gợi Ý Hot -->
+    <section class="game-section">
+        <div class="section-header">
+            <div class="section-title">
+                <i class="fas fa-gem"></i>  GỢI Ý HOT
+            </div>
+            <a href="#" class="section-more">Thêm >></a>
+        </div>
+        
+        <!-- Lưới Game Mới -->
+        <div class="game-grid new-layout">
+            
+            <!-- Thẻ Game 1 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <!-- Tạm dùng text PG, bạn có thể thay bằng thẻ <img> chứa logo nhà cung cấp -->
+                        <h4 class="game-provider">PG</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/1.gif" alt="Quyết Chiến Tiền Thưởng">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    Quyết Chiến Tiền Thưởng
+                </div>
+            </div>
+
+            <!-- Thẻ Game 2 (Nhân bản để xem trước giao diện lưới) -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">FC</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/2.avif" alt="SIÊU ÁT">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    Tết Nguyên Đán Moreways
+                </div>
+            </div>
+
+            <!-- Thẻ Game 3 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">PG</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/3.avif" alt="DJ BOM BOM">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    DJ BOM BOM
+                </div>
+            </div>
+
+            <!-- Thẻ Game 4 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">JILI</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/4.gif" alt="KHO BÁU AZTEC">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    KHO BÁU AZTEC
+                </div>
+            </div>
+
+            <!-- Thẻ Game 5 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">JILI</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/5.gif" alt="MẠT CHƯỢC 2">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    MẠT CHƯỢC 2
+                </div>
+            </div>
+
+        
+        
+            
+            <!-- Thẻ Game 1 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <!-- Tạm dùng text PG, bạn có thể thay bằng thẻ <img> chứa logo nhà cung cấp -->
+                        <h4 class="game-provider">PG</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/6.avif" alt="MÈO THẦN TÀI">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    MÈO THẦN TÀI
+                </div>
+            </div>
+
+            <!-- Thẻ Game 2 (Nhân bản để xem trước giao diện lưới) -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">FC</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/7.avif" alt="ĐÊM POKER">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    ĐÊM POKER
+                </div>
+            </div>
+
+            <!-- Thẻ Game 3 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">PG</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/8.avif" alt="ĐẾ QUỐC HOÀNG KIM">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    ĐẾ QUỐC HOÀNG KIM
+                </div>
+            </div>
+
+            <!-- Thẻ Game 4 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">JILI</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/9.webp" alt="NĂM MỚI">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    NĂM MỚI
+                </div>
+            </div>
+
+            <!-- Thẻ Game 5 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">JILI</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/10.avif" alt="WIN WIN WON">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    WIN WIN WON
+                </div>
+            </div>
+
+        
+        
+            
+            <!-- Thẻ Game 1 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <!-- Tạm dùng text PG, bạn có thể thay bằng thẻ <img> chứa logo nhà cung cấp -->
+                        <h4 class="game-provider">PG</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/11.avif" alt="CÂY TÀI LỘC">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    CÂY TÀI LỘC
+                </div>
+            </div>
+
+            <!-- Thẻ Game 2 (Nhân bản để xem trước giao diện lưới) -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">FC</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/12.avif" alt="ĐỒNG VÀNG 2">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    ĐỒNG VÀNG 2
+                </div>
+            </div>
+
+            <!-- Thẻ Game 3 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">PG</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/13.webp" alt="SƯ TỬ MAY MẮN">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    SƯ TỬ MAY MẮN
+                </div>
+            </div>
+
+            <!-- Thẻ Game 4 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">JILI</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/14.avif" alt="KỲ LÂN MÁCH NƯỚC">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    KỲ LÂN MÁCH NƯỚC
+                </div>
+            </div>
+
+            <!-- Thẻ Game 5 -->
+            <div class="game-card">
+                <div class="card-top">
+                    <div class="card-info">
+                        <span class="game-category">Nổ Hũ</span>
+                        <h4 class="game-provider">JILI</h4> 
+                    </div>
+                    <div class="card-thumbnail">
+                        <img src="images/15.webp" alt="NỮ HOÀNG INCA 2">
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    NỮ HOÀNG INCA 2
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Navigation (Chỉ hiển thị trên Mobile) -->
+    <nav class="mobile-bottom-nav">
+        <div class="bottom-nav-item">
+            <i class="fas fa-home"></i>
+            <span>TRANG CHỦ</span>
+        </div>
+        <div class="bottom-nav-item">
+            <i class="fas fa-gift"></i>
+            <span>KHUYẾN MÃI</span>
+            <span class="badge badge-hot-bottom">HOT</span>
+        </div>
+        <!-- Mục Giới Thiệu ở giữa, nổi bật -->
+        <div class="bottom-nav-item center-item">
+            <div class="center-icon">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <span>GIỚI THIỆU</span>
+        </div>
+        <div class="bottom-nav-item">
+            <i class="fas fa-user-plus"></i>
+            <span>ĐẠI LÝ</span>
+            <span class="badge badge-percent-bottom">80%</span>
+        </div>
+        <div class="bottom-nav-item">
+            <i class="fas fa-user"></i>
+            <span>TÀI KHOẢN</span>
+        </div>
+    </nav>
+   <!-- Cửa sổ Modal Đăng Nhập / Đăng Ký -->
+    <div id="auth-modal" class="modal-overlay">
+        
+        <!-- FORM ĐĂNG NHẬP -->
+        <div class="modal-content" id="login-form">
+            <div class="modal-header">
+                <img src="images/logo.webp" alt="TR88 Logo" class="modal-logo">
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Ô Tên người dùng -->
+                <div class="input-group">
+                    <i class="far fa-user icon-left text-red"></i>
+                    <input type="text" placeholder="Tên người dùng">
+                </div>
+                
+                <!-- Ô Mật khẩu -->
+                <div class="input-group">
+                    <i class="fas fa-unlock-alt icon-left text-red"></i>
+                    <input type="password" placeholder="Mật khẩu">
+                    <i class="far fa-eye-slash icon-right text-gray"></i>
+                </div>
+
+                <!-- Ô Số điện thoại (Mới thêm) -->
+                <div class="input-group">
+                    <i class="fas fa-mobile-alt icon-left text-red"></i>
+                    <input type="tel" placeholder="Số điện thoại">
+                </div>
+                
+                <p class="security-notice">VUI LÒNG TỰ BẢO QUẢN THÔNG TIN TÀI KHOẢN ĐỂ BẢO ĐẢM AN TOÀN CHO TÀI KHOẢN CỦA BẠN</p>
+                
+                <!-- Nút Đăng nhập chính -->
+                <button class="btn-submit">Đăng nhập</button>
+                
+                <!-- Vạch ngăn cách -->
+                <div class="divider">
+                    <span>ĐĂNG NHẬP NHANH</span>
+                </div>
+                
+                <!-- Chuyển sang Đăng ký -->
+                <p class="switch-auth">BẠN CHƯA CÓ TÀI KHOẢN? <a href="#" id="go-to-register">TẠO TÀI KHOẢN</a></p>
+                
+                <!-- Các nút hỗ trợ lấy lại mật khẩu -->
+                <div class="recovery-actions">
+                    <button class="btn-recovery">Lấy lại mật khẩu<br>bằng số điện thoại</button>
+                    <button class="btn-recovery">Lấy lại mật khẩu<br>bằng email</button>
+                </div>
+                
+                <!-- Banner tải VPN -->
+                <div class="vpn-banner">
+                    <div class="vpn-badge">TẢI 1.1.1.1</div>
+                    <p>TRUY CẬP THẢ GA KHÔNG LO BỊ CHẶN</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM ĐĂNG KÝ -->
+        <div class="modal-content modal-register" id="register-form" style="display: none;">
+            <div class="modal-header">
+                <img src="images/logo.webp" alt="TR88 Logo" class="modal-logo">
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="register-grid">
+                    <!-- Cột trái -->
+                    <div class="reg-col">
+                        <label><i class="far fa-user text-red"></i> Tên người dùng</label>
+                        <div class="input-group-reg">
+                            <input type="text" placeholder="Từ 5-15 Kí Tự, Có Thể Gồm Cả Chữ Cái Hoặc Số">
+                        </div>
+                        <p class="input-hint">Từ 5-15 Kí Tự, Có Thể Gồm Cả Chữ Cái Hoặc Số</p>
+
+                        <label><i class="fas fa-unlock-alt text-red"></i> Mật khẩu</label>
+                        <div class="input-group-reg">
+                            <input type="password" placeholder="Hơn 6 Ký Tự Phải Bao Gồm Chữ Cái Và Số">
+                            <i class="far fa-eye-slash icon-right text-gray"></i>
+                        </div>
+                        <p class="input-hint">Hơn 6 Ký Tự Phải Bao Gồm Chữ Cái Và Số</p>
+
+                        
+                    </div>
+
+                    <!-- Cột phải -->
+                    <div class="reg-col">
+                        <label><i class="fas fa-info-circle text-red"></i> Tên thật</label>
+                        <div class="input-group-reg">
+                            <input type="text" placeholder="Họ tên đầy đủ giống với giấy tờ cá nhân. Viết...">
+                        </div>
+                        <p class="input-hint hint-multiline">Họ tên đầy đủ giống với giấy tờ cá nhân. Viết in hoa, không dấu, không ký tự đặc biệt (ví dụ: NGUYEN VAN HOAI)</p>
+
+                        <!-- Đổi Xác nhận mật khẩu thành Số điện thoại -->
+                        <label><i class="fas fa-mobile-alt text-red"></i> Số điện thoại</label>
+                        <div class="input-group-reg">
+                            <input type="tel" placeholder="Vui lòng nhập số điện thoại">
+                        </div>
+                        <p class="input-hint">Vui lòng nhập số điện thoại hợp lệ của bạn</p>
+                    </div>
+                </div>
+
+                <!-- Điều khoản -->
+                <div class="terms-check">
+                    <i class="far fa-check-square text-red"></i>
+                    <span>Tôi đã đủ 18 tuổi và đồng ý điều khoản <a href="#">" 《Điều khoản》"</a></span>
+                </div>
+
+                <!-- Nút Đăng ký -->
+                <button class="btn-submit">Đăng ký</button>
+                
+                <!-- Vạch ngăn cách -->
+                <div class="divider">
+                    <span>ĐĂNG NHẬP NHANH</span>
+                </div>
+                
+                
+                <p class="switch-auth" style="margin-top: 15px; font-size: 13px;">Quý khách đã có tài khoản? <a href="#" id="go-to-login">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Liên kết file Script -->
+    <script src="script.js"></script>
+</body>
+</html>
